@@ -36,5 +36,5 @@ jobs:
       - name: Upload Go test results
         uses: actions/upload-artifact@v3
         with:
-          name: whatsmyup-arm64
+          name: whatsmyip-arm64
           path: whatsmyip-arm64
