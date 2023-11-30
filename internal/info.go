@@ -20,7 +20,11 @@ func ReturnMyIpHandler(request *http.Request) MyIpResponse {
 			break
 		}
 		if len(v) > 0 {
-			headers[h] = strings.Join(v[:2], ",")
+			if len(v) > 5 {
+				v = v[:5]
+			}
+			s := strings.Join(v, ",")
+			headers[h] = s
 		}
 	}
 

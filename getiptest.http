@@ -1,0 +1,7 @@
+###
+
+# curl http://localhost:8007/myip
+GET http://localhost:8007/myip
+
+###
+
